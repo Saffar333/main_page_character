@@ -325,29 +325,6 @@ function renderProfile(user) {
                 <div class="stat-label">Сообщений сегодня</div>
             </div>
         </div>
-
-        <div class="info-list">
-            <div class="info-item">
-                <div class="info-label">Telegram ID</div>
-                <div class="info-value">${user.telegram_id}</div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Username</div>
-                <div class="info-value">${username ? '@' + username : 'Не указан'}</div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Язык</div>
-                <div class="info-value">${(telegramUser?.language_code || 'ru').toUpperCase()}</div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Premium</div>
-                <div class="info-value">${telegramUser?.is_premium ? '⭐ Да' : 'Нет'}</div>
-            </div>
-            <div class="info-item">
-                <div class="info-label">Платформа</div>
-                <div class="info-value">${tg.platform || 'Неизвестно'}</div>
-            </div>
-        </div>
     `;
 
     console.log('✅ Профиль отображен');
